@@ -3,11 +3,11 @@
 # Briefly explain the work that you did on this project: What code were you given? What code did you create yourself?
 I programmed the agent to choose the best optimal path to the target in a maze. I was given the code where the maze is initalized, the pirate intelligent agent is resetted, the actions where the pirate is allowed to take and each reward and penalty with each move. Check the game status, observe the current state, and draw the maze with the best path taken. 
 
-The game experience class keeps tracks of the epsiodes data which the agent later learns through exploration. It holds the inputs and targets of each episode. 
+The game experience class keeps track of the episodes which the agent later learns through exploration. It holds the inputs and targets of each episode. 
 
-I created a Deep-Q learning algorithm which consisted of a training loop, an epsilon-greedy strategy, win rate calcuation and checking whether the game is over, and whether the agent has found the optimal path/epoch. The training loop chooses whether to choose the next action based on the epsilon value. The action is taken on the environment and the state, reward, and game status are recorded. The epsiode gets recorded on a game experience object. The training networks is fed samples from all the episodes in the game experience object. The win rate is calculated to check whether the agent has found the 100% optimal epoch win rate.
+I created a Deep-Q learning algorithm which consisted of a training loop, an epsilon-greedy strategy, win-rate calcuation and checking whether the game is over, and whether the agent has found the optimal path/epoch. The training loop chooses whether to choose the next action based on the epsilon value. The action is taken on the environment and the state, reward, and game status are recorded. The episode gets recorded on a game experience object. The training networks is fed samples from all the episodes in the game experience object. The win rate is calculated to check whether the agent has found the 100% optimal epoch win-rate.
 
-# Connect your learning from throughout this course to the larger field of computer science: Computational finance can benefit from reinforcement learning with this algorithms for trading can boost gains in investors portfolios. The AI agent can make the best financial decisions when calculating risk to reward ratio.
+# Connect your learning from throughout this course to the larger field of computer science: Computational finance can benefit from reinforcement learning with this algorithm for trading can boost gains in investors portfolios. The AI agent can make the best financial decisions when calculating risk to reward ratio.
 
 
 # What do computer scientists do and why does it matter?
